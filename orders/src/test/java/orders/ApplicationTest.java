@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package hello;
+package orders;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -34,24 +34,5 @@ public class ApplicationTest {
 
     @Autowired
     private MockMvc mockMvc;
-
-    @Test
-    public void homePage() throws Exception {
-        // N.B. jsoup can be useful for asserting HTML content
-        mockMvc.perform(get("/index.html"))
-                .andExpect(content().string(containsString("Get your greeting")));
-    }
-
-    @Test
-    public void greeting() throws Exception {
-        mockMvc.perform(get("/greeting"))
-                .andExpect(content().string(containsString("Hello, World!")));
-    }
-
-    @Test
-    public void greetingWithUser() throws Exception {
-        mockMvc.perform(get("/greeting").param("name", "Greg"))
-                .andExpect(content().string(containsString("Hello, Greg!")));
-    }
 
 }
