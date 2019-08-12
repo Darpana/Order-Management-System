@@ -50,7 +50,9 @@ public class OrderServiceImpl implements OrderService {
                     }
                     orderRepository.saveAll(orderDetails);
                     orderTrackingDetailsRepository.saveAll(orderTrackingDetailList);
-        //TODO- An Executor service for updating the inventory details upon placing an order
+        //TODO- An Executor service for updating the inventory details upon placing an order using Inventory service. On every update,
+                // the item page will be updated with the latest availability. The update will be synchronized such that the correctness is retained.
+                // This can be achieved using Observer pattern.
             }
             return unavailableItems;
     }
