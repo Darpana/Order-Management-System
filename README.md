@@ -12,7 +12,8 @@
         
         c. Inventory tables are managed manually thereby mmanually populating the items in it.
 ``` Here is the sample request on http://localhost:8080/order:```
-        ```[
+
+        [
         
         	{
          
@@ -42,7 +43,7 @@
           
         	}
          
-        ]```
+        ]
 
 
 
