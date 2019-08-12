@@ -12,7 +12,7 @@
         
         c. Inventory tables are managed manually thereby mmanually populating the items in it.
 ``` Here is the sample request on http://localhost:8080/order:```
-        [
+        ```[
         	{
         		"itemId":1,
         		"accountId":1,
@@ -27,7 +27,7 @@
         		"unitValue":250,
         		"quantity":2
         	}
-        ]
+        ]```
 
 
 
